@@ -1,0 +1,12 @@
+textarea {
+  width: 100%;
+  min-height: 100px;
+  background: url(http://i.imgur.com/2cOaJ.png) top -12px left / auto no-repeat, 
+              linear-gradient(#ffffff 50%, #ffffff 50%) top left / 100% 32px;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+  resize: vertical;
+  line-height: 16px;
+  font-size: 13px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analisador</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script src="js/TokensCompilador/tokens.js"></script>
+    <script src="js/TokensCompilador/tokensRegex.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css"></link>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: blue">Analisador Léxico</h1>
+    <div id="divAlerta" style="text-align: center"></div>
+    <div
+      class="textarea-wrapper"
+      style="
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      "
+    >
+      <textarea
+        line
+        rows="10"
+        cols="40"
+        id="code"
+        name="code"
+        style="height: 200px; width: 400px"
+      ></textarea>
+     
+      <br />
+      <button
+        style="margin-bottom: 20px"
+        type="button"
+        class="btn btn-success"
+        onclick="Clicou()"
+      >
+        Compilar
+      </button>
+
+      <div id="divtabela">
+        <!-- <table
+          style="margin: 0 auto; max-width: 50%"
+          id="tabela"
+          class="table caption-top"
+        >
+          <strong
+            ><caption style="color: black">
+              Análise
+            </caption></strong
+          >
+          <thead>
+            <tr>
+              <th scope="col">Linha</th>
+              <th scope="col">Token</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTabela"></tbody>
+        </table> -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
